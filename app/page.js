@@ -1,24 +1,21 @@
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-12">
-      <div className="z-10 max-w-5xl w-full items-center justify-between  text-sm lg:flex"></div>
+      <div className="z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex"></div>
 
-      <div class="relative grid before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] ">
+      <div className="relative grid before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] ">
         <div className="text-6xl font-bold text-center">Ammar Alibrahim</div>
 
         <div className="text-gray-400 place-items-center text-center text-1xl drop-shadow-lg font-thin">
           <span className="text-white">Full-Stack</span> Developer
         </div>
         <div className="text-gray-400 place-items-center text-center text-sm drop-shadow-lg font-thin max-w-xl">
-          {" "}
-          "Hello, I'm Ammar Alibrahim, a 16 year old{" "}
+          &ldquo;Hello, I'm Ammar Alibrahim, a 16-year-old{" "}
           <span className="text-white">Full-Stack</span> web developer. I'm
           passionate about creating innovative and user-friendly web
-          applications using the power of web technologies"
+          applications using the power of web technologies&rdquo;
         </div>
       </div>
-
-
 
       <div className="text-gray-400 place-items-center text-center text-1xl drop-shadow-lg font-thin py-8">
         Skills
@@ -34,7 +31,6 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             React.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-             
             </span>
           </h2>
           <p
@@ -55,7 +51,6 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Next.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-             
             </span>
           </h2>
           <p
@@ -76,7 +71,6 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Node.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-             
             </span>
           </h2>
           <p
@@ -97,7 +91,6 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Express.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-             
             </span>
           </h2>
           <p
