@@ -10,11 +10,11 @@ export default function Home() {
           <span className="text-white">Full-Stack</span> Developer
         </div>
         <div className="text-gray-400 place-items-center text-center text-sm drop-shadow-lg font-thin max-w-xl">
-          &ldquo;Hello, I'm Ammar Alibrahim, a 16-year-old{" "}
-          <span className="text-white">Full-Stack</span> web developer. I'm
-          passionate about creating innovative and user-friendly web
-          applications using the power of web technologies&rdquo;
-        </div>
+  &ldquo;Hello, I'm Ammar Alibrahim, a 16-year-old{" "}
+  <span className="text-white">Full-Stack</span> web developer. I'm
+  passionate about creating innovative and user-friendly web
+  applications using the power of web technologies&rdquo;
+</div>
       </div>
 
       <div className="text-gray-400 place-items-center text-center text-1xl drop-shadow-lg font-thin py-8">
