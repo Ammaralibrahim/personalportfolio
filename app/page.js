@@ -34,7 +34,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             React.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -55,7 +55,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Next.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -76,7 +76,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Node.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -97,7 +97,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Express.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -118,7 +118,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Nest.js{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -140,7 +140,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             MongoDB{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -161,7 +161,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             MySQL{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -182,7 +182,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Tailwind CSS{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -203,7 +203,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Bootstrap{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -224,7 +224,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Material UI{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
@@ -245,7 +245,7 @@ export default function Home() {
           <h2 className={`mb-2 text-xl font-semibold`}>
             Git{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+             
             </span>
           </h2>
           <p
