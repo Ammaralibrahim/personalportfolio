@@ -10,7 +10,7 @@ export default function Home() {
           <span className="text-white">Full-Stack</span> Developer
         </div>
         <div className="text-gray-400 place-items-center text-center text-sm drop-shadow-lg font-thin max-w-xl">
-  &ldquo;Hello, I'm Ammar Alibrahim, a 16-year-old{" "}
+  &ldquo;Hello, I'm Ammar Alibrahim, a 16-year-old
   <span className="text-white">Full-Stack</span> web developer. I'm
   passionate about creating innovative and user-friendly web
   applications using the power of web technologies&rdquo;
@@ -29,7 +29,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            React.js{" "}
+            React.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             </span>
           </h2>
@@ -49,7 +49,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            Next.js{" "}
+            Next.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             </span>
           </h2>
@@ -69,7 +69,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            Node.js{" "}
+            Node.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             </span>
           </h2>
@@ -89,7 +89,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            Express.js{" "}
+            Express.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             </span>
           </h2>
@@ -109,7 +109,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            Nest.js{" "}
+            Nest.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
              
             </span>
@@ -131,7 +131,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            MongoDB{" "}
+            MongoDB
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
              
             </span>
@@ -152,7 +152,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            MySQL{" "}
+            MySQL
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
              
             </span>
@@ -173,7 +173,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            Tailwind CSS{" "}
+            Tailwind CSS
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
              
             </span>
@@ -194,7 +194,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            Bootstrap{" "}
+            Bootstrap
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
              
             </span>
@@ -215,7 +215,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            Material UI{" "}
+            Material UI
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
              
             </span>
@@ -236,7 +236,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-2 text-xl font-semibold`}>
-            Git{" "}
+            Git
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
              
             </span>
