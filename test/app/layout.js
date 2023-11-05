@@ -1,7 +1,7 @@
-import { Orbitron } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const orbitron = Orbitron({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={orbitron.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

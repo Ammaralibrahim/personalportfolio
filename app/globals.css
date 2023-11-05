@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Inclusive+Sans&family=Orbitron:wght@400;500;600;700&family=Poppins:wght@100;200;300&family=Sofia+Sans+Extra+Condensed:wght@1;100;200&display=swap');
+.orbitron{
+  font-family: 'Orbitron', sans-serif;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +27,19 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+/* Neon efekti vermek için stil */
+.neon-text {
+  position: relative;
+  text-shadow: 0 0 2px #ffff, 0 0 2px #ffff, 0 0 2px #ffff, 0 0 2px #ffff;
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 20% {
+      text-shadow: 0 0 2px #ffff, 0 0 2px #ffff, 0 0 2px #ffff, 0 0 2px #ffff;
+  }
+  50% {
+      text-shadow: 0 0 2px #ffff, 0 0 2px #ffff, 0 0 2px #ffff, 0 0 2px #ffff;
+  }
 }
