@@ -86,12 +86,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             React.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A JavaScript library for building user interfaces. Component-based
             development. Enhances performance using a virtual DOM.
@@ -105,12 +105,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             Next.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A React-based framework. Supports server-rendering (SSR) and static
             site generation (SSG). Provides file-based routing.
@@ -124,12 +124,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             Node.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             Used to run server-side JavaScript. Features a fast and event-driven
             runtime. Boasts a vast module ecosystem.
@@ -143,12 +143,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             Express.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A fast and minimal web application framework for Node.js. Built on a
             middleware-based architecture. Convenient for creating APIs and
@@ -162,12 +162,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             Nest.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A progressive Node.js framework for building efficient, reliable,
             and scalable server-side applications. Utilizes TypeScript and
@@ -182,12 +182,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             MongoDB
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A NoSQL database. Uses a JSON-like BSON document format. Provides
             flexible and scalable data storage.
@@ -201,12 +201,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             MySQL
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A relational database management system (RDBMS). Stores and queries
             data with tables and relationships. Offers ACID compliance.
@@ -220,12 +220,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             Tailwind CSS
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A utility-first CSS framework for building modern web applications.
             Simplifies styling with reusable classes.
@@ -239,12 +239,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             Bootstrap
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A popular front-end framework for building responsive and consistent
             web designs. Comes with pre-designed components and styles.
@@ -258,12 +258,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             Material UI
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A popular React component library that follows the Material Design
             guidelines. Offers ready-made UI components for modern web
@@ -277,12 +277,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-2 text-xl font-semibold`}>
+          <h2 className="mb-2 text-xl font-semibold">
             Git
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
           <p
-            className={`m-0 max-w-[35ch] text-xs tracking-widest opacity-50`}
+            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
           >
             A distributed version control system for tracking changes in source
             code. Facilitates collaboration and code management.

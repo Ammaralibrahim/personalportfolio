@@ -70,7 +70,7 @@ export default function Project() {
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className={`mb-2 text-md font-semibold`}>Gamma Cities</h2>
+                <h2 className="mb-2 text-md font-semibold">Gamma Cities</h2>
                 <div className="flex relative justify-center sm:justify-start">
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none max-w-xs">
                     <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
@@ -90,7 +90,7 @@ export default function Project() {
                 </div>
               </div>
 
-              <p className={`m-0 text-xs tracking-widest opacity-50`}>
+              <p className="m-0 text-xs tracking-widest opacity-50">
                 Gamma Cities is a platform providing a virtual metaverse
                 experience, allowing users to explore diverse online spaces.
                 Developed with technologies such as React.js and Three.js, the
@@ -120,7 +120,7 @@ export default function Project() {
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className={`mb-2 text-md font-semibold`}>
+                <h2 className="mb-2 text-md font-semibold">
                   Reyhana perfumes
                 </h2>
                 <div className="flex relative justify-center sm:justify-start">
@@ -141,7 +141,7 @@ export default function Project() {
                   </span>
                 </div>
               </div>
-              <p className={`m-0 text-xs tracking-widest opacity-50`}>
+              <p className="m-0 text-xs tracking-widest opacity-50">
                 Reyhana Perfumes is an online shopping platform developed using
                 Next.js and Tailwind CSS. Users can explore and purchase various
                 perfume products. The platform stands out with its user-friendly
@@ -170,7 +170,7 @@ export default function Project() {
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className={`mb-2 text-md font-semibold`}>Gamma Studio</h2>
+                <h2 className="mb-2 text-md font-semibold">Gamma Studio</h2>
                 <div className="flex relative justify-center sm:justify-start">
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                     <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
@@ -189,7 +189,7 @@ export default function Project() {
                   </span>
                 </div>
               </div>
-              <p className={`m-0 text-xs tracking-widest opacity-50`}>
+              <p className="m-0 text-xs tracking-widest opacity-50">
                 Gamma Studio is the company's promotional website, enabling
                 users to access their desired metaverse spaces. The platform,
                 developed using React, Node.js, and Express.js, stores its data
@@ -218,7 +218,7 @@ export default function Project() {
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className={`mb-2 text-md font-semibold`}>Gamma Universe</h2>
+                <h2 className="mb-2 text-md font-semibold">Gamma Universe</h2>
                 <div className="flex relative justify-center sm:justify-start">
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                     <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
@@ -237,7 +237,7 @@ export default function Project() {
                   </span>
                 </div>
               </div>
-              <p className={`m-0 text-xs tracking-widest opacity-50`}>
+              <p className="m-0 text-xs tracking-widest opacity-50">
                 Gamma Universe is an overarching website encompassing all of
                 Gamma company's platforms and websites. It's built using
                 React.js, Node.js, and Express.js, with MongoDB serving as the
