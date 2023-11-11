@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import gammastudio from "@/public/gammastudio.png";
 import Image from "next/image";
-import Gammacities from "./gammacities.png"
-import Gammastudio from "./gammastudio.png"
-import Reyhanaperfumes from "./reyhana-perfumes.png"
-import Gammauniverse from "./gammauniverse.png"
+import Gammacities from "./gammacities.png";
+import Gammastudio from "./gammastudio.png";
+import Reyhanaperfumes from "./reyhana-perfumes.png";
+import Gammauniverse from "./gammauniverse.png";
 
 export default function Project() {
   return (
@@ -13,8 +13,10 @@ export default function Project() {
       <main className="flex flex-col items-center justify-between p-24 px-32 pt-12 min-h-screen">
         <div className="flex relative">
           <div className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2">
-          <Link href="/cv" target="_blank"> CV </Link>
-
+            <Link href="/cv" target="_blank">
+              {" "}
+              CV{" "}
+            </Link>
           </div>
           <div className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2">
             <Link href="/">Home</Link>
@@ -58,37 +60,37 @@ export default function Project() {
         <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
           <div className="group lg:flex sm:grid rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <figure className="">
-            <Image
-              src={Gammacities} // Update with your image path
-              alt="CV 1"
-              width={600} // Adjust width and height according to your image
-              height={400}
-              className="rounded-xl"
-            />
+              <Image
+                src={Gammacities} // Update with your image path
+                alt="CV 1"
+                width={600} // Adjust width and height according to your image
+                height={400}
+                className="rounded-xl"
+              />
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
                 <h2 className={`mb-2 text-md font-semibold`}>Gamma Cities</h2>
                 <div className="flex relative justify-center sm:justify-start">
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none max-w-xs">
-                    <span className="bg-blue-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       React.js
                     </span>
 
-                    <span className="bg-red-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       Node.js
                     </span>
-                    <span className="bg-green-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       Express.js
                     </span>
-                    <span className="bg-green-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       MongoDB
                     </span>
                   </span>
                 </div>
               </div>
 
-              <p className={`m-0 text-[10px] tracking-widest opacity-50`}>
+              <p className={`m-0 text-xs tracking-widest opacity-50`}>
                 Gamma Cities is a platform providing a virtual metaverse
                 experience, allowing users to explore diverse online spaces.
                 Developed with technologies such as React.js and Three.js, the
@@ -108,13 +110,13 @@ export default function Project() {
             rel="noopener noreferrer"
           >
             <figure className="">
-            <Image
-              src={Reyhanaperfumes} // Update with your image path
-              alt="CV 1"
-              width={600} // Adjust width and height according to your image
-              height={400}
-              className="rounded-xl"
-            />
+              <Image
+                src={Reyhanaperfumes} // Update with your image path
+                alt="CV 1"
+                width={600} // Adjust width and height according to your image
+                height={400}
+                className="rounded-xl"
+              />
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
@@ -123,23 +125,23 @@ export default function Project() {
                 </h2>
                 <div className="flex relative justify-center sm:justify-start">
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    <span className="bg-blue-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       React.js
                     </span>
 
-                    <span className="bg-red-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       Node.js
                     </span>
-                    <span className="bg-green-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       Express.js
                     </span>
-                    <span className="bg-green-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       MongoDB
                     </span>
                   </span>
                 </div>
               </div>
-              <p className={`m-0 text-[10px] tracking-widest opacity-50`}>
+              <p className={`m-0 text-xs tracking-widest opacity-50`}>
                 Reyhana Perfumes is an online shopping platform developed using
                 Next.js and Tailwind CSS. Users can explore and purchase various
                 perfume products. The platform stands out with its user-friendly
@@ -158,36 +160,36 @@ export default function Project() {
             rel="noopener noreferrer"
           >
             <figure className="">
-            <Image
-              src={Gammastudio} // Update with your image path
-              alt="CV 1"
-              width={600} // Adjust width and height according to your image
-              height={400}
-              className="rounded-xl"
-            />
+              <Image
+                src={Gammastudio} // Update with your image path
+                alt="CV 1"
+                width={600} // Adjust width and height according to your image
+                height={400}
+                className="rounded-xl"
+              />
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
                 <h2 className={`mb-2 text-md font-semibold`}>Gamma Studio</h2>
                 <div className="flex relative justify-center sm:justify-start">
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    <span className="bg-blue-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       React.js
                     </span>
 
-                    <span className="bg-red-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       Node.js
                     </span>
-                    <span className="bg-green-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       Express.js
                     </span>
-                    <span className="bg-green-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       MongoDB
                     </span>
                   </span>
                 </div>
               </div>
-              <p className={`m-0 text-[10px] tracking-widest opacity-50`}>
+              <p className={`m-0 text-xs tracking-widest opacity-50`}>
                 Gamma Studio is the company's promotional website, enabling
                 users to access their desired metaverse spaces. The platform,
                 developed using React, Node.js, and Express.js, stores its data
@@ -206,36 +208,36 @@ export default function Project() {
             rel="noopener noreferrer"
           >
             <figure className="">
-            <Image
-              src={Gammauniverse} // Update with your image path
-              alt="CV 1"
-              width={600} // Adjust width and height according to your image
-              height={400}
-              className="rounded-xl"
-            />
+              <Image
+                src={Gammauniverse} // Update with your image path
+                alt="CV 1"
+                width={600} // Adjust width and height according to your image
+                height={400}
+                className="rounded-xl"
+              />
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
                 <h2 className={`mb-2 text-md font-semibold`}>Gamma Universe</h2>
                 <div className="flex relative justify-center sm:justify-start">
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    <span className="bg-blue-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       React.js
                     </span>
 
-                    <span className="bg-red-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       Node.js
                     </span>
-                    <span className="bg-green-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       Express.js
                     </span>
-                    <span className="bg-green-100 text-gray-800 text-[9px] font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
                       MongoDB
                     </span>
                   </span>
                 </div>
               </div>
-              <p className={`m-0 text-[10px] tracking-widest opacity-50`}>
+              <p className={`m-0 text-xs tracking-widest opacity-50`}>
                 Gamma Universe is an overarching website encompassing all of
                 Gamma company's platforms and websites. It's built using
                 React.js, Node.js, and Express.js, with MongoDB serving as the
