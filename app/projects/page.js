@@ -1,6 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import gammastudio from "@/public/gammastudio.png";
+import Image from "next/image";
+import Gammacities from "./gammacities.png"
+import Gammastudio from "./gammastudio.png"
+import Reyhanaperfumes from "./reyhana-perfumes.png"
+import Gammauniverse from "./gammauniverse.png"
 
 export default function Project() {
   return (
@@ -53,11 +58,13 @@ export default function Project() {
         <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
           <div className="group lg:flex sm:grid rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
             <figure className="">
-              <img
-                src="https://i.postimg.cc/6Qhjj1FP/gammacities.png"
-                alt="Shoes"
-                className="rounded-xl"
-              />
+            <Image
+              src={Gammacities} // Update with your image path
+              alt="CV 1"
+              width={600} // Adjust width and height according to your image
+              height={400}
+              className="rounded-xl"
+            />
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
@@ -101,11 +108,13 @@ export default function Project() {
             rel="noopener noreferrer"
           >
             <figure className="">
-              <img
-                src="https://i.postimg.cc/jdFLNx5g/reyhana-perfumes.png"
-                alt="Shoes"
-                className="rounded-xl w-34"
-              />
+            <Image
+              src={Reyhanaperfumes} // Update with your image path
+              alt="CV 1"
+              width={600} // Adjust width and height according to your image
+              height={400}
+              className="rounded-xl"
+            />
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
@@ -149,11 +158,13 @@ export default function Project() {
             rel="noopener noreferrer"
           >
             <figure className="">
-              <img
-                src="https://i.postimg.cc/hvHRD5Dr/Ads-z-tasar-m.png"
-                alt="Shoes"
-                className="rounded-xl w-34"
-              />
+            <Image
+              src={Gammastudio} // Update with your image path
+              alt="CV 1"
+              width={600} // Adjust width and height according to your image
+              height={400}
+              className="rounded-xl"
+            />
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
@@ -195,11 +206,13 @@ export default function Project() {
             rel="noopener noreferrer"
           >
             <figure className="">
-              <img
-                src="https://i.postimg.cc/Tw0HNH5w/Ads-z-tasar-m-1.png"
-                alt="Shoes"
-                className="rounded-xl"
-              />
+            <Image
+              src={Gammauniverse} // Update with your image path
+              alt="CV 1"
+              width={600} // Adjust width and height according to your image
+              height={400}
+              className="rounded-xl"
+            />
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">

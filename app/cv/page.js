@@ -1,7 +1,8 @@
 import React from "react";
-import CV1 from "./cv1.jpg";
-import CV2 from "./cv2.jpg";
 import Link from "next/link";
+import Image from "next/image";
+import Cv1 from "./cv1.jpg"
+import Cv2 from "./cv2.jpg"
 
 export default function CV() {
   return (
@@ -14,17 +15,19 @@ export default function CV() {
       <div className="flex justify-center items-center ">
         <div className="flex flex-col gap-4 p-4">
           <div className="w-full flex justify-center items-center">
-            <img
-              src="https://i.postimg.cc/mg942bWx/Resume-Ammar-Alibrahim-24-08-2023-23-05-35-1-page-0001.jpg"
+            <Image
+              src={Cv1} // Update with your image path
               alt="CV 1"
-              className="w-full h-full object-cover"
+              width={600} // Adjust width and height according to your image
+              height={400}
             />
           </div>
           <div className="w-full flex justify-center items-center">
-            <img
-              src="https://i.postimg.cc/yNXzcvNv/Resume-Ammar-Alibrahim-24-08-2023-23-05-35-1-page-0002.jpg"
+            <Image
+              src={Cv2} // Update with your image path
               alt="CV 2"
-              className="w-full h-full object-cover"
+              width={600} // Adjust width and height according to your image
+              height={400}
             />
           </div>
         </div>
