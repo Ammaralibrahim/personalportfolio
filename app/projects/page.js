@@ -5,10 +5,11 @@ import gammastudio from "@/public/gammastudio.png";
 export default function Project() {
   return (
     <>
-      <main className="flex flex-col items-center justify-between p-24 pt-12 min-h-screen">
+      <main className="flex flex-col items-center justify-between p-24 px-32 pt-12 min-h-screen">
         <div className="flex relative">
           <div className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2">
-            CV
+          <Link href="/cv" target="_blank"> CV </Link>
+
           </div>
           <div className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2">
             <Link href="/">Home</Link>
@@ -30,7 +31,7 @@ export default function Project() {
             </Link>
           </div>
           <div className="animate-pulse">
-            <Link href="https://github.com/Ammaralibrahim">
+            <Link href="https://www.linkedin.com/in/ammar-alibrahim/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
