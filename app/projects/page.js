@@ -120,9 +120,7 @@ export default function Project() {
             </figure>
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className="mb-2 text-md font-semibold">
-                  Reyhana perfumes
-                </h2>
+                <h2 className="mb-2 text-md font-semibold">Reyhana perfumes</h2>
                 <div className="flex relative justify-center sm:justify-start">
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                     <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
@@ -190,7 +188,7 @@ export default function Project() {
                 </div>
               </div>
               <p className="m-0 text-xs tracking-widest opacity-50">
-                Gamma Studio is the company's promotional website, enabling
+                Gamma Studio is the company&apos;s promotional website, enabling
                 users to access their desired metaverse spaces. The platform,
                 developed using React, Node.js, and Express.js, stores its data
                 in MongoDB and leverages Google Cloud infrastructure for high
@@ -239,9 +237,9 @@ export default function Project() {
               </div>
               <p className="m-0 text-xs tracking-widest opacity-50">
                 Gamma Universe is an overarching website encompassing all of
-                Gamma company's platforms and websites. It's built using
-                React.js, Node.js, and Express.js, with MongoDB serving as the
-                database solution.
+                Gamma company&apos;s platforms and websites. It&apos;s built
+                using React.js, Node.js, and Express.js, with MongoDB serving as
+                the database solution.
               </p>
             </div>
           </a>
