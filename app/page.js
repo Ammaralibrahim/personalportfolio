@@ -23,7 +23,7 @@ export default function Home() {
         >
           CV
         </Link>
-        <Link href="/projects" >
+        <Link href="/projects">
           <div className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2">
             Projects
           </div>
@@ -59,6 +59,21 @@ export default function Home() {
             </svg>
           </Link>
         </div>
+        <div div className="animate-pulse ml-1">
+          <Link href="mailto:ammaryasir8088@gmail.com">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 50 50"
+              fill="white"
+            >
+              <path d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"></path>
+            </svg>
+          </Link>
+        </div>
       </div>
 
       <div className="relative grid before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] ">
@@ -90,9 +105,7 @@ export default function Home() {
             React.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A JavaScript library for building user interfaces. Component-based
             development. Enhances performance using a virtual DOM.
           </p>
@@ -109,9 +122,7 @@ export default function Home() {
             Next.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A React-based framework. Supports server-rendering (SSR) and static
             site generation (SSG). Provides file-based routing.
           </p>
@@ -128,9 +139,7 @@ export default function Home() {
             Node.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             Used to run server-side JavaScript. Features a fast and event-driven
             runtime. Boasts a vast module ecosystem.
           </p>
@@ -147,9 +156,7 @@ export default function Home() {
             Express.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A fast and minimal web application framework for Node.js. Built on a
             middleware-based architecture. Convenient for creating APIs and
             server applications.
@@ -166,9 +173,7 @@ export default function Home() {
             Nest.js
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A progressive Node.js framework for building efficient, reliable,
             and scalable server-side applications. Utilizes TypeScript and
             follows the MVC pattern.
@@ -186,9 +191,7 @@ export default function Home() {
             MongoDB
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A NoSQL database. Uses a JSON-like BSON document format. Provides
             flexible and scalable data storage.
           </p>
@@ -205,9 +208,7 @@ export default function Home() {
             MySQL
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A relational database management system (RDBMS). Stores and queries
             data with tables and relationships. Offers ACID compliance.
           </p>
@@ -224,9 +225,7 @@ export default function Home() {
             Tailwind CSS
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A utility-first CSS framework for building modern web applications.
             Simplifies styling with reusable classes.
           </p>
@@ -243,9 +242,7 @@ export default function Home() {
             Bootstrap
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A popular front-end framework for building responsive and consistent
             web designs. Comes with pre-designed components and styles.
           </p>
@@ -262,9 +259,7 @@ export default function Home() {
             Material UI
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A popular React component library that follows the Material Design
             guidelines. Offers ready-made UI components for modern web
             applications.
@@ -281,9 +276,7 @@ export default function Home() {
             Git
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
           </h2>
-          <p
-            className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50"
-          >
+          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
             A distributed version control system for tracking changes in source
             code. Facilitates collaboration and code management.
           </p>
