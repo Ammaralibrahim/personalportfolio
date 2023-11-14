@@ -77,7 +77,7 @@ export default function Home() {
         <div div className="animate-pulse ml-1">
           <Link href="https://wa.me/+905518530350?text=Hi">
             <svg
-            className="ml-1"
+              className="ml-1"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
