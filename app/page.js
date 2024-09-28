@@ -110,194 +110,213 @@ export default function Home() {
         Skills
       </div>
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-6 lg:text-left">
-        {/* React.js */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            React.js
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A JavaScript library for building user interfaces. Component-based
-            development. Enhances performance using a virtual DOM.
-          </p>
-        </a>
+  {/* React.js */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      React.js
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A JavaScript library for building user interfaces. Component-based
+      development. Enhances performance using a virtual DOM.
+    </p>
+  </a>
 
-        {/* Next.js */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            Next.js
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A React-based framework. Supports server-rendering (SSR) and static
-            site generation (SSG). Provides file-based routing.
-          </p>
-        </a>
+  {/* Next.js */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      Next.js
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A React-based framework. Supports server-rendering (SSR) and static
+      site generation (SSG). Provides file-based routing.
+    </p>
+  </a>
 
-        {/* Node.js */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            Node.js
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            Used to run server-side JavaScript. Features a fast and event-driven
-            runtime. Boasts a vast module ecosystem.
-          </p>
-        </a>
+  {/* Node.js */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      Node.js
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      Used to run server-side JavaScript. Features a fast and event-driven
+      runtime. Boasts a vast module ecosystem.
+    </p>
+  </a>
 
-        {/* Express.js */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            Express.js
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A fast and minimal web application framework for Node.js. Built on a
-            middleware-based architecture. Convenient for creating APIs and
-            server applications.
-          </p>
-        </a>
-        {/* Nest.js */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            Nest.js
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A progressive Node.js framework for building efficient, reliable,
-            and scalable server-side applications. Utilizes TypeScript and
-            follows the MVC pattern.
-          </p>
-        </a>
+  {/* Express.js */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      Express.js
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A fast and minimal web application framework for Node.js. Built on a
+      middleware-based architecture. Convenient for creating APIs and
+      server applications.
+    </p>
+  </a>
 
-        {/* MongoDB */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            MongoDB
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A NoSQL database. Uses a JSON-like BSON document format. Provides
-            flexible and scalable data storage.
-          </p>
-        </a>
+  {/* Nest.js */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      Nest.js
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A progressive Node.js framework for building efficient, reliable,
+      and scalable server-side applications. Utilizes TypeScript and
+      follows the MVC pattern.
+    </p>
+  </a>
 
-        {/* MySQL */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            MySQL
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A relational database management system (RDBMS). Stores and queries
-            data with tables and relationships. Offers ACID compliance.
-          </p>
-        </a>
+  {/* Angular */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      Angular
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A platform for building mobile and desktop web applications. Offers
+      a rich set of tools and components for rapid development.
+    </p>
+  </a>
 
-        {/* Tailwind CSS */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            Tailwind CSS
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A utility-first CSS framework for building modern web applications.
-            Simplifies styling with reusable classes.
-          </p>
-        </a>
+  {/* NgRx */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      NgRx
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      Reactive state management for Angular applications. Utilizes Redux
+      principles to manage global state.
+    </p>
+  </a>
 
-        {/* Bootstrap */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            Bootstrap
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A popular front-end framework for building responsive and consistent
-            web designs. Comes with pre-designed components and styles.
-          </p>
-        </a>
+  {/* Nx.dev */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      Nx.dev
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A powerful set of extensible dev tools for monorepos, providing
+      advanced capabilities for Angular and other frameworks.
+    </p>
+  </a>
 
-        {/* Material UI */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            Material UI
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A popular React component library that follows the Material Design
-            guidelines. Offers ready-made UI components for modern web
-            applications.
-          </p>
-        </a>
-        {/* Git */}
-        <a
-          href="/"
-          className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-2 text-xl font-semibold">
-            Git
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
-          </h2>
-          <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
-            A distributed version control system for tracking changes in source
-            code. Facilitates collaboration and code management.
-          </p>
-        </a>
-      </div>
+  {/* MongoDB */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      MongoDB
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A NoSQL database. Uses a JSON-like BSON document format. Provides
+      flexible and scalable data storage.
+    </p>
+  </a>
+
+  {/* MySQL */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      MySQL
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A relational database management system (RDBMS). Stores and queries
+      data with tables and relationships. Offers ACID compliance.
+    </p>
+  </a>
+
+  {/* Tailwind CSS */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      Tailwind CSS
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A utility-first CSS framework for building modern web applications.
+      Simplifies styling with reusable classes.
+    </p>
+  </a>
+
+  {/* Docker */}
+  <a
+    href="/"
+    className="group rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <h2 className="mb-2 text-xl font-semibold">
+      Docker
+      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
+    </h2>
+    <p className="m-0 max-w-[35ch] text-xs tracking-widest opacity-50">
+      A platform for developing, shipping, and running applications in
+      containers. Ensures consistency across environments.
+    </p>
+  </a>
+</div>
+
     </main>
   );
 }
