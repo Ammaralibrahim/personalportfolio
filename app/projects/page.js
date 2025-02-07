@@ -7,6 +7,7 @@ import Gammastudio from "./gammastudio.png";
 import Reyhanaperfumes from "./reyhana-perfumes.png";
 import Gammauniverse from "./gammauniverse.png";
 import Gammaassets from "./gammaassets.png";
+import BrightEdu from "./brightedu.png";
 
 export default function Project() {
   return (
@@ -187,6 +188,66 @@ export default function Project() {
           </a>
         </div>
 
+
+
+        <div className="mb-32 grid  text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
+          {/* React.js */}
+          <a
+            href="https://brightedu.vercel.app/"
+            className="group lg:flex sm:grid flex-row-reverse rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure className="">
+              <Image
+                src={BrightEdu} // Update with your image path
+                alt="brightedu"
+                width={600} // Adjust width and height according to your image
+                height={400}
+                className="rounded-xl"
+              />
+            </figure>
+            <div className="grid px-4 max-w-lg">
+              <div className="flex justify-between flex-col sm:flex-row">
+                <h2 className="mb-2 text-md font-semibold">BrightEdu</h2>
+                <div className="flex relative justify-center sm:justify-start">
+                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                      Next.js
+                    </span>
+
+                    
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                      Tailwind CSS
+                    </span>
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                      Framer Motion
+                    </span>
+                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
+                      Parallax
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <p className="m-0 text-xs tracking-widest opacity-50">
+                This landing page is designed to provide a fast, interactive,
+                and visually appealing user experience. Developed with Next.js,
+                Tailwind CSS, and Framer Motion, the page ensures seamless
+                performance and responsiveness across all devices. Built with a
+                modular and scalable architecture, the landing page incorporates
+                Shadcn/UI components for a polished and user-friendly interface.
+                Animations powered by Framer Motion enhance engagement, while
+                Next.js's server-side rendering (SSR) and incremental static
+                regeneration (ISR) optimize load times and SEO performance. With
+                lazy loading and optimized images, the page maintains high
+                performance. Integrated Next.js API routes enable efficient form
+                submissions and data handling, ensuring smooth interaction
+                between users and the backend.
+              </p>
+            </div>
+          </a>
+        </div>
+
         <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
           {/* React.js */}
           <a
@@ -195,15 +256,7 @@ export default function Project() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <figure className="">
-              <Image
-                src={Gammauniverse} // Update with your image path
-                alt="CV 1"
-                width={600} // Adjust width and height according to your image
-                height={400}
-                className="rounded-xl"
-              />
-            </figure>
+           
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
                 <h2 className="mb-2 text-md font-semibold">Gamma Universe</h2>
@@ -232,6 +285,15 @@ export default function Project() {
                 the database solution.
               </p>
             </div>
+            <figure className="">
+              <Image
+                src={Gammauniverse} // Update with your image path
+                alt="CV 1"
+                width={600} // Adjust width and height according to your image
+                height={400}
+                className="rounded-xl"
+              />
+            </figure>
           </a>
         </div>
 
@@ -243,15 +305,8 @@ export default function Project() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <figure className="">
-              <Image
-                src={Gammastudio} // Update with your image path
-                alt="CV 1"
-                width={600} // Adjust width and height according to your image
-                height={400}
-                className="rounded-xl"
-              />
-            </figure>
+            
+
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
                 <h2 className="mb-2 text-md font-semibold">Gamma Studio</h2>
@@ -281,11 +336,17 @@ export default function Project() {
                 performance and reliability.
               </p>
             </div>
+            <figure className="">
+              <Image
+                src={Gammastudio} // Update with your image path
+                alt="CV 1"
+                width={600} // Adjust width and height according to your image
+                height={400}
+                className="rounded-xl"
+              />
+            </figure>
           </a>
         </div>
-     
-
-    
 
         <div className="mb-32 grid  text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
           {/* React.js */}
@@ -295,15 +356,7 @@ export default function Project() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <figure className="">
-              <Image
-                src={Reyhanaperfumes} // Update with your image path
-                alt="CV 1"
-                width={600} // Adjust width and height according to your image
-                height={400}
-                className="rounded-xl"
-              />
-            </figure>
+           
             <div className="grid px-4 max-w-lg">
               <div className="flex justify-between flex-col sm:flex-row">
                 <h2 className="mb-2 text-md font-semibold">Reyhana perfumes</h2>
@@ -330,8 +383,19 @@ export default function Project() {
                 experience by leveraging the advantages provided by Next.js.
               </p>
             </div>
+            <figure className="">
+              <Image
+                src={Reyhanaperfumes} // Update with your image path
+                alt="CV 1"
+                width={600} // Adjust width and height according to your image
+                height={400}
+                className="rounded-xl"
+              />
+            </figure>
           </a>
         </div>
+
+       
       </main>
     </>
   );
