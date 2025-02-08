@@ -16,17 +16,18 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-12">
       <div className="flex">
-        <Link
-          href="/cv"
-          target="_blank"
+       <Link 
+          href="/cv" 
+          target="_blank" 
           className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2"
         >
           CV
         </Link>
-        <Link href="/projects">
-          <div className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2">
-            Projects
-          </div>
+        <Link 
+          href="/projects" 
+          className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin mx-2"
+        >
+          Projects
         </Link>
       </div>
 
