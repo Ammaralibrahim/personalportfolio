@@ -237,7 +237,7 @@ export default function Project() {
                 modular and scalable architecture, the landing page incorporates
                 Shadcn/UI components for a polished and user-friendly interface.
                 Animations powered by Framer Motion enhance engagement, while
-                Next.js's server-side rendering (SSR) and incremental static
+                Next.js&apos;s server-side rendering (SSR) and incremental static
                 regeneration (ISR) optimize load times and SEO performance. With
                 lazy loading and optimized images, the page maintains high
                 performance. Integrated Next.js API routes enable efficient form

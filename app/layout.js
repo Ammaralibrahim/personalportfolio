@@ -6,7 +6,7 @@ const orbitron = Orbitron({ subsets: ["latin"] });
 export const metadata = {
   title: "Ammar Alibrahim",
   description:
-    "“Hello, I'm Ammar Alibrahim, a 16-year-old Full-Stack web developer. I'm passionate about creating innovative and user-friendly web applications using the power of web technologies”",
+    "“Hello, Im Ammar Alibrahim, a 16-year-old Full-Stack web developer. Im passionate about creating innovative and user-friendly web applications using the power of web technologies”",
 };
 
 export default function RootLayout({ children }) {
