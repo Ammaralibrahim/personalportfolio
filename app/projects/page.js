@@ -1,402 +1,504 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
-import gammastudio from "@/public/gammastudio.png";
 import Image from "next/image";
-import Gammacities from "./gammacities.png";
-import Gammastudio from "./gammastudio.png";
-import Reyhanaperfumes from "./reyhana-perfumes.png";
-import Gammauniverse from "./gammauniverse.png";
-import Gammaassets from "./gammaassets.png";
-import BrightEdu from "./brightedu.png";
+import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiChevronRight, FiExternalLink } from "react-icons/fi";
+import { 
+  SiReact, 
+  SiNextdotjs, 
+  SiNodedotjs, 
+  SiExpress, 
+  SiMongodb, 
+  SiTailwindcss, 
+  SiFramer,
+  SiThreedotjs
+} from "react-icons/si";
 
-export default function Project() {
+// Proje verileri
+const projects = [
+  {
+    id: 1,
+    title: "Gamma Cities",
+    description: "A virtual metaverse platform offering gaming-like immersion with diverse online spaces. Built with React.js and Three.js for 3D experiences, backed by Node.js, Express, and Google Cloud for secure data storage.",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Three.js", "Google Cloud"],
+    image: "/gammacities.png",
+    link: "https://gammacities.com",
+    featured: true,
+    gradient: "from-cyan-500/20 to-blue-500/20"
+  },
+  {
+    id: 2,
+    title: "GammaAssets",
+    description: "Blockchain-powered real estate investment platform for metaverse properties. Enables fractional ownership with secure transactions and portfolio management.",
+    technologies: ["Next.js", "Node.js", "Express.js", "MongoDB", "Blockchain"],
+    image: "/gammaassets.png",
+    link: "https://gammaassets.com/",
+    featured: true,
+    gradient: "from-purple-500/20 to-pink-500/20"
+  },
+  {
+    id: 3,
+    title: "BrightEdu",
+    description: "Modern educational platform with parallax effects and smooth animations. Optimized for performance with SSR, ISR, and responsive design across all devices.",
+    technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Parallax"],
+    image: "/brightedu.png",
+    link: "https://brightedu.vercel.app/",
+    featured: false,
+    gradient: "from-green-500/20 to-teal-500/20"
+  },
+  {
+    id: 4,
+    title: "Gamma Universe",
+    description: "Central hub for all Gamma company platforms. Comprehensive showcase with integrated navigation and unified design system.",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    image: "/gammauniverse.png",
+    link: "https://www.gammauniverse.io/",
+    featured: false,
+    gradient: "from-orange-500/20 to-red-500/20"
+  },
+  {
+    id: 5,
+    title: "Gamma Studio",
+    description: "Promotional platform for accessing metaverse spaces. Showcases company projects with interactive demos and detailed case studies.",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Google Cloud"],
+    image: "/gammastudio.png",
+    link: "https://gammastudio.io",
+    featured: false,
+    gradient: "from-blue-500/20 to-cyan-500/20"
+  },
+  {
+    id: 6,
+    title: "Reyhana Perfumes",
+    description: "E-commerce platform for luxury perfumes with seamless shopping experience. Fast performance and elegant product presentation.",
+    technologies: ["Next.js", "React.js", "Tailwind CSS"],
+    image: "/reyhana-perfumes.png",
+    link: "https://reyhana-perfumes.vercel.app/",
+    featured: false,
+    gradient: "from-pink-500/20 to-rose-500/20"
+  }
+];
+
+const technologyIcons = {
+  "React.js": <SiReact className="text-cyan-400" />,
+  "Next.js": <SiNextdotjs className="text-white" />,
+  "Node.js": <SiNodedotjs className="text-green-500" />,
+  "Express.js": <SiExpress className="text-gray-300" />,
+  "MongoDB": <SiMongodb className="text-green-400" />,
+  "Tailwind CSS": <SiTailwindcss className="text-teal-400" />,
+  "Framer Motion": <SiFramer className="text-pink-500" />,
+  "Three.js": <SiThreedotjs className="text-blue-300" />,
+  "Blockchain": <div className="w-4 h-4 bg-gradient-to-r from-yellow-500 to-orange-500 rounded" />,
+  "Google Cloud": <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-green-500 rounded" />,
+  "Parallax": <div className="w-4 h-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded" />
+};
+
+export default function Projects() {
+  const [hoveredProject, setHoveredProject] = useState(null);
+
   return (
-    <>
-      <main className="flex flex-col items-center justify-between p-24 px-32 pt-12 min-h-screen">
-        <div className="flex relative">
-          <div className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2">
-            {/* <Link href="/cv" target="_blank">
-              {" "}
-              CV{" "}
-            </Link> */}
-          </div>
-          <div className="text-gray-400 place-items-center underline cursor-pointer hover:text-white text-center text-1xl drop-shadow-lg font-thin animate-bounce mx-2">
-            <Link href="/">Home</Link>
-          </div>
-        </div>
+    <div className="relative min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 blur-3xl -top-40 -left-40" />
+        <div className="absolute w-[300px] h-[300px] rounded-full bg-gradient-to-r from-purple-500/10 to-pink-500/10 blur-3xl -bottom-40 -right-40" />
+        
+        {/* Grid Pattern */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `linear-gradient(to right, #4a5568 1px, transparent 1px),
+                            linear-gradient(to bottom, #4a5568 1px, transparent 1px)`,
+            backgroundSize: '50px 50px',
+          }}
+        />
+      </div>
 
-        <div className="flex py-7">
-          <div className="animate-pulse">
-            <Link href="https://github.com/Ammaralibrahim">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="white"
-              >
-                <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.308,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15,C27,8.373,21.627,3,15,3z"></path>
-              </svg>
-            </Link>
-          </div>
-          <div className="animate-pulse">
-            <Link href="https://www.linkedin.com/in/ammar-alibrahim/">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="white"
-              >
-                <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
-              </svg>
-            </Link>
-          </div>
-          <div div className="animate-pulse ml-1">
-            <Link href="mailto:ammaryasir8088@gmail.com">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="30"
-                height="30"
-                viewBox="0 0 50 50"
-                fill="white"
-              >
-                <path d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"></path>
-              </svg>
-            </Link>
-          </div>
-          <div div className="animate-pulse ml-1">
-            <Link href="https://wa.me/+905518530350?text=Hi">
-              <svg
-                className="ml-1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="25"
-                height="25"
-                viewBox="0 0 50 50"
-                fill="white"
-              >
-                <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"></path>
-              </svg>
-            </Link>
-          </div>
-        </div>
+      {/* Floating Particles */}
+      {[...Array(15)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute w-1 h-1 bg-blue-400/30 rounded-full"
+          initial={{
+            x: Math.random() * 100 + "vw",
+            y: Math.random() * 100 + "vh",
+          }}
+          animate={{
+            x: `+=${Math.random() * 100 - 50}`,
+            y: `+=${Math.random() * 100 - 50}`,
+          }}
+          transition={{
+            duration: Math.random() * 10 + 10,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+        />
+      ))}
 
-        <div className="text-gray-400 place-items-center underline text-center text-1xl drop-shadow-lg font-thin py-8">
-          Projects
-        </div>
-        <a href="https://gammacities.com" target="_blank">
-          <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
-            <div className="group lg:flex sm:grid rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-              <div className="grid px-4 max-w-lg">
-                <div className="flex justify-between flex-col sm:flex-row">
-                  <h2 className="mb-2 text-md font-semibold">Gamma Cities</h2>
-                  <div className="flex relative justify-center sm:justify-start">
-                    <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none max-w-xs">
-                      <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                        React.js
-                      </span>
-
-                      <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                        Node.js
-                      </span>
-                      <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                        Express.js
-                      </span>
-                      <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                        MongoDB
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                <p className="m-0 text-xs tracking-widest opacity-50">
-                  Gamma Cities is a platform providing a virtual metaverse
-                  experience, allowing users to explore diverse online spaces.
-                  Developed with technologies such as React.js and Three.js, the
-                  platform offers users a gaming-like immersion. It utilizes
-                  Node.js, Express, and Google Cloud for data storage, ensuring
-                  secure retention of user interactions.
-                </p>
-              </div>
-              <figure className="">
-                <Image
-                  src={Gammacities} // Update with your image path
-                  alt="CV 1"
-                  width={600} // Adjust width and height according to your image
-                  height={400}
-                  className="rounded-xl"
-                />
-              </figure>
-            </div>
-          </div>
-        </a>
-
-        <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
-          {/* React.js */}
-          <a
-            href="https://gammaassets.com/" // Updated link
-            className="group lg:flex sm:grid rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
+      <main className="relative z-10 container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        {/* Navigation */}
+        <motion.nav 
+          initial={{ y: -100 }}
+          animate={{ y: 0 }}
+          className="flex items-center justify-between mb-16"
+        >
+          <motion.div 
+            whileHover={{ scale: 1.05 }}
+            className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
           >
-            <figure className="">
-              <Image
-                src={Gammaassets} // Update with your image path
-                alt="GammaAssets" // Updated alt text
-                width={600} // Adjust width and height according to your image
-                height={400}
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="grid px-4 max-w-lg">
-              <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className="mb-2 text-md font-semibold">GammaAssets</h2>{" "}
-                {/* Project name updated */}
-                <div className="flex relative justify-center sm:justify-start">
-                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Next.js
-                    </span>
+            <Link href="/">AA.</Link>
+          </motion.div>
+          
+          <div className="flex items-center gap-6">
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <Link
+                href="/"
+                className="group relative px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 hover:border-cyan-400/30 transition-all duration-300"
+              >
+                <span className="text-white/80 group-hover:text-white text-sm font-medium">
+                  Home
+                </span>
+                <FiChevronRight className="inline ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+              </Link>
+            </motion.div>
+          </div>
+        </motion.nav>
 
-                    <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Node.js
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Express.js
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      MongoDB
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <p className="m-0 text-xs tracking-widest opacity-50">
-                GammaAssets is a platform supported by blockchain technology
-                that enables users to purchase shares and invest in real estate
-                within metaverse environments. Developed using React, Node.js,
-                and Express.js, it stores its data in MongoDB and leverages
-                Google Cloud infrastructure for high performance and
-                reliability.
-              </p>
-            </div>
-          </a>
-        </div>
-
-
-
-        <div className="mb-32 grid  text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
-          {/* React.js */}
-          <a
-            href="https://brightedu.vercel.app/"
-            className="group lg:flex sm:grid flex-row-reverse rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
+        {/* Hero Section */}
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-20"
           >
-            <figure className="">
-              <Image
-                src={BrightEdu} // Update with your image path
-                alt="brightedu"
-                width={600} // Adjust width and height according to your image
-                height={400}
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="grid px-4 max-w-lg">
-              <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className="mb-2 text-md font-semibold">BrightEdu</h2>
-                <div className="flex relative justify-center sm:justify-start">
-                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Next.js
-                    </span>
-
-                    
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Tailwind CSS
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Framer Motion
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Parallax
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <p className="m-0 text-xs tracking-widest opacity-50">
-                This landing page is designed to provide a fast, interactive,
-                and visually appealing user experience. Developed with Next.js,
-                Tailwind CSS, and Framer Motion, the page ensures seamless
-                performance and responsiveness across all devices. Built with a
-                modular and scalable architecture, the landing page incorporates
-                Shadcn/UI components for a polished and user-friendly interface.
-                Animations powered by Framer Motion enhance engagement, while
-                Next.js&apos;s server-side rendering (SSR) and incremental static
-                regeneration (ISR) optimize load times and SEO performance. With
-                lazy loading and optimized images, the page maintains high
-                performance. Integrated Next.js API routes enable efficient form
-                submissions and data handling, ensuring smooth interaction
-                between users and the backend.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
-          {/* React.js */}
-          <a
-            href="https://www.gammauniverse.io/"
-            className="group lg:flex sm:grid flex-row-reverse rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-           
-            <div className="grid px-4 max-w-lg">
-              <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className="mb-2 text-md font-semibold">Gamma Universe</h2>
-                <div className="flex relative justify-center sm:justify-start">
-                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      React.js
-                    </span>
-
-                    <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Node.js
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Express.js
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      MongoDB
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <p className="m-0 text-xs tracking-widest opacity-50">
-                Gamma Universe is an overarching website encompassing all of
-                Gamma company&apos;s platforms and websites. It&apos;s built
-                using React.js, Node.js, and Express.js, with MongoDB serving as
-                the database solution.
-              </p>
-            </div>
-            <figure className="">
-              <Image
-                src={Gammauniverse} // Update with your image path
-                alt="CV 1"
-                width={600} // Adjust width and height according to your image
-                height={400}
-                className="rounded-xl"
-              />
-            </figure>
-          </a>
-        </div>
-
-        <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
-          {/* React.js */}
-          <a
-            href="https://gammastudio.io"
-            className="group lg:flex sm:grid rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            <h1 className="text-6xl md:text-8xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Projects
+              </span>
+            </h1>
             
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "150px" }}
+              transition={{ delay: 0.3, duration: 1 }}
+              className="h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto my-8 rounded-full"
+            />
+            
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              A collection of my work showcasing modern web development, 
+              innovative solutions, and cutting-edge technologies.
+            </p>
+          </motion.div>
 
-            <div className="grid px-4 max-w-lg">
-              <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className="mb-2 text-md font-semibold">Gamma Studio</h2>
-                <div className="flex relative justify-center sm:justify-start">
-                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      React.js
-                    </span>
+          {/* Featured Projects */}
+          <div className="mb-24">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-4xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                  Featured Work
+                </span>
+              </h2>
+              <p className="text-gray-400">Highlighted projects that represent my best work</p>
+            </motion.div>
 
-                    <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Node.js
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Express.js
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      MongoDB
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <p className="m-0 text-xs tracking-widest opacity-50">
-                Gamma Studio is the company&apos;s promotional website, enabling
-                users to access their desired metaverse spaces. The platform,
-                developed using React, Node.js, and Express.js, stores its data
-                in MongoDB and leverages Google Cloud infrastructure for high
-                performance and reliability.
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+              {projects.filter(p => p.featured).map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 }}
+                  onMouseEnter={() => setHoveredProject(project.id)}
+                  onMouseLeave={() => setHoveredProject(null)}
+                  className="group relative"
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+                  
+                  <div className="relative h-full rounded-3xl bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-sm border border-white/10 overflow-hidden group-hover:border-cyan-400/30 transition-all duration-300">
+                    {/* Project Image */}
+                    <div className="relative h-64 md:h-80 overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
+                      <div 
+                        className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900"
+                        style={{
+                          backgroundImage: `url('${project.image}')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          transform: hoveredProject === project.id ? 'scale(1.05)' : 'scale(1)',
+                          transition: 'transform 0.5s ease'
+                        }}
+                      />
+                    </div>
+
+                    {/* Project Content */}
+                    <div className="p-8">
+                      <div className="flex items-start justify-between mb-4">
+                        <h3 className="text-2xl font-bold text-white">{project.title}</h3>
+                        <motion.a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="text-gray-400 hover:text-white transition-colors"
+                        >
+                          <FiExternalLink className="text-xl" />
+                        </motion.a>
+                      </div>
+                      
+                      <p className="text-gray-400 mb-6 leading-relaxed">
+                        {project.description}
+                      </p>
+
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {project.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300"
+                          >
+                            {technologyIcons[tech] || <div className="w-3 h-3 bg-gray-500 rounded" />}
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* View Project Button */}
+                      <motion.a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="inline-flex items-center justify-center w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/30 text-cyan-300 font-medium hover:from-cyan-500/30 hover:to-blue-500/30 transition-all group/btn"
+                      >
+                        View Project
+                        <FiExternalLink className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                      </motion.a>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
-            <figure className="">
-              <Image
-                src={Gammastudio} // Update with your image path
-                alt="CV 1"
-                width={600} // Adjust width and height according to your image
-                height={400}
-                className="rounded-xl"
-              />
-            </figure>
-          </a>
-        </div>
+          </div>
 
-        <div className="mb-32 grid  text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
-          {/* React.js */}
-          <a
-            href="https://reyhana-perfumes.vercel.app/"
-            className="group lg:flex sm:grid flex-row-reverse rounded-lg border border-transparent px-3 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* All Projects Grid */}
+          <div className="mb-32">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-4xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                  All Projects
+                </span>
+              </h2>
+              <p className="text-gray-400">Complete portfolio of my development work</p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {projects.map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -10 }}
+                  onMouseEnter={() => setHoveredProject(project.id)}
+                  onMouseLeave={() => setHoveredProject(null)}
+                  className="group relative"
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+                  
+                  <div className="relative h-full rounded-2xl bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-sm border border-white/10 overflow-hidden group-hover:border-cyan-400/30 transition-all duration-300">
+                    {/* Project Image */}
+                    <div className="relative h-48 overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10" />
+                      <div 
+                        className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900"
+                        style={{
+                          backgroundImage: `url('${project.image}')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          transform: hoveredProject === project.id ? 'scale(1.05)' : 'scale(1)',
+                          transition: 'transform 0.5s ease'
+                        }}
+                      />
+                    </div>
+
+                    {/* Project Content */}
+                    <div className="p-6">
+                      <div className="flex items-start justify-between mb-3">
+                        <h3 className="text-lg font-bold text-white truncate">{project.title}</h3>
+                        <motion.a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="text-gray-400 hover:text-white transition-colors flex-shrink-0 ml-2"
+                        >
+                          <FiExternalLink className="text-sm" />
+                        </motion.a>
+                      </div>
+                      
+                      <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                        {project.description}
+                      </p>
+
+                      {/* Technologies (Compact) */}
+                      <div className="flex flex-wrap gap-1.5 mb-4">
+                        {project.technologies.slice(0, 3).map((tech) => (
+                          <span
+                            key={tech}
+                            className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300"
+                          >
+                            {technologyIcons[tech] || <div className="w-2.5 h-2.5 bg-gray-500 rounded" />}
+                            <span className="truncate max-w-[60px]">{tech}</span>
+                          </span>
+                        ))}
+                        {project.technologies.length > 3 && (
+                          <span className="inline-flex items-center px-2 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">
+                            +{project.technologies.length - 3}
+                          </span>
+                        )}
+                      </div>
+
+                      {/* View Button */}
+                      <motion.a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="inline-flex items-center justify-center w-full py-2 rounded-lg bg-white/5 border border-white/10 text-gray-300 text-sm font-medium hover:bg-white/10 hover:text-white transition-all"
+                      >
+                        View Details
+                      </motion.a>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Stats Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-24"
           >
-           
-            <div className="grid px-4 max-w-lg">
-              <div className="flex justify-between flex-col sm:flex-row">
-                <h2 className="mb-2 text-md font-semibold">Reyhana perfumes</h2>
-                <div className="flex relative justify-center sm:justify-start">
-                  <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                    <span className="bg-blue-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      React.js
-                    </span>
+            {[
+              { value: "6+", label: "Projects" },
+              { value: "100%", label: "Satisfaction" },
+              { value: "15+", label: "Technologies" },
+              { value: "∞", label: "Passion" },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="text-center p-6 rounded-2xl bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm border border-white/10"
+              >
+                <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-gray-400 text-sm">{stat.label}</div>
+              </div>
+            ))}
+          </motion.div>
 
-                    <span className="bg-red-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Next.js
-                    </span>
-                    <span className="bg-green-100 text-gray-800 text-xs font-medium me-1.5 px-1 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-400">
-                      Tailwind CSS
-                    </span>
+          {/* CTA Section */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-purple-500/20 blur-3xl rounded-3xl" />
+              
+              <div className="relative p-12 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10">
+                <h3 className="text-3xl font-bold mb-6">
+                  <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                    Have a Project in Mind?
                   </span>
+                </h3>
+                <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
+                  Let&apos;s collaborate and bring your vision to life with cutting-edge technology.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <motion.a
+                    href="/contact"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium inline-flex items-center gap-3"
+                  >
+                    Contact Me
+                    <FiMail />
+                  </motion.a>
+                  <motion.a
+                    href="/"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-8 py-3 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-white font-medium inline-flex items-center gap-3 hover:border-cyan-400/30 transition-all"
+                  >
+                    Back to Home
+                    <FiChevronRight />
+                  </motion.a>
                 </div>
               </div>
-              <p className="m-0 text-xs tracking-widest opacity-50">
-                Reyhana Perfumes is an online shopping platform developed using
-                Next.js and Tailwind CSS. Users can explore and purchase various
-                perfume products. The platform stands out with its user-friendly
-                interface and fast performance, offering a dynamic shopping
-                experience by leveraging the advantages provided by Next.js.
-              </p>
             </div>
-            <figure className="">
-              <Image
-                src={Reyhanaperfumes} // Update with your image path
-                alt="CV 1"
-                width={600} // Adjust width and height according to your image
-                height={400}
-                className="rounded-xl"
-              />
-            </figure>
-          </a>
+          </motion.div>
         </div>
 
-       
+        {/* Footer */}
+        <motion.footer
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mt-32 pt-8 border-t border-white/10 text-center"
+        >
+          <div className="flex justify-center gap-6 mb-4">
+            {[
+              { icon: <FiGithub />, href: "https://github.com/Ammaralibrahim", label: "GitHub" },
+              { icon: <FiLinkedin />, href: "https://www.linkedin.com/in/ammar-alibrahim/", label: "LinkedIn" },
+              { icon: <FiTwitter />, href: "https://twitter.com/ammaralibrahim", label: "Twitter" },
+              { icon: <FiMail />, href: "mailto:ammaryasir8088@gmail.com", label: "Email" },
+            ].map((link, index) => (
+              <motion.a
+                key={index}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -5, scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative"
+              >
+                <div className="relative w-12 h-12 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/70 group-hover:text-white group-hover:border-cyan-400/50 transition-all">
+                  <div className="text-xl">{link.icon}</div>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+          
+          <div className="text-gray-500 text-sm">
+            Crafted with passion using Next.js, Tailwind CSS & Framer Motion
+          </div>
+          <div className="text-gray-600 text-xs mt-2">
+            © {new Date().getFullYear()} Ammar Alibrahim. All rights reserved.
+          </div>
+        </motion.footer>
       </main>
-    </>
+    </div>
   );
 }
