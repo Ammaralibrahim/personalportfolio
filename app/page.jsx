@@ -17,6 +17,8 @@ import {
 } from "react-icons/fi";
 import { SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiNestjs, SiExpress, SiMongodb, SiMysql, SiTailwindcss, SiFramer, SiDocker, SiAngular, SiRedux } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import Navbar from "./components/Navbar";
+
 
 export default function Home() {
   const [activeSkill, setActiveSkill] = useState(null);
@@ -224,33 +226,7 @@ export default function Home() {
 
       <main className="relative z-10 container mx-auto px-4 py-8 sm:px-6 lg:px-8">
         {/* Navigation */}
-        <motion.nav 
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
-          className="flex items-center justify-between mb-20"
-        >
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
-          >
-            AA.
-          </motion.div>
-          
-          <div className="flex items-center gap-6">
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                href="/projects"
-                className="group relative px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 hover:border-cyan-400/30 transition-all duration-300"
-              >
-                <span className="text-white/80 group-hover:text-white text-sm font-medium">
-                  Projects
-                </span>
-                <FiChevronRight className="inline ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-              </Link>
-            </motion.div>
-          </div>
-        </motion.nav>
-
+      <Navbar/>
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center text-center mb-24">

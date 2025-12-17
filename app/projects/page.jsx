@@ -15,6 +15,9 @@ import {
   SiGooglecloud,
   SiGatsby
 } from "react-icons/si";
+import Navbar from "../components/Navbar";
+
+
 
 // Proje verileri
 const projects = [
@@ -449,34 +452,7 @@ export default function Projects() {
       ))}
 
       <main className="relative z-10 container mx-auto px-4 py-8 sm:px-6 lg:px-8">
-        {/* Navigation */}
-        <motion.nav 
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
-          className="flex items-center justify-between mb-16"
-        >
-          <motion.div 
-            whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
-          >
-            <Link href="/">AA.</Link>
-          </motion.div>
-          
-          <div className="flex items-center gap-6">
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                href="/"
-                className="group relative px-6 py-2.5 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 hover:border-cyan-400/30 transition-all duration-300"
-              >
-                <span className="text-white/80 group-hover:text-white text-sm font-medium">
-                  Home
-                </span>
-                <FiChevronRight className="inline ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-              </Link>
-            </motion.div>
-          </div>
-        </motion.nav>
-
+       <Navbar/>
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto">
           <motion.div
