@@ -655,7 +655,7 @@ export default function Services() {
                 <span className="text-white font-medium">Email:</span> ammaryasir8088@gmail.com
               </div>
               <div className="text-sm text-gray-400">
-                <span className="text-white font-medium">Location:</span> Suriye/Türkiye
+                <span className="text-white font-medium">Location:</span> Türkiye
               </div>
             </div>
             
