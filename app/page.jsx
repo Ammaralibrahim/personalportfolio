@@ -13,12 +13,12 @@ import {
   FiDatabase,
   FiLayers,
   FiCpu,
-  FiBox
+  FiBox,
+  FiFileText
 } from "react-icons/fi";
 import { SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiNestjs, SiExpress, SiMongodb, SiMysql, SiTailwindcss, SiFramer, SiDocker, SiAngular, SiRedux } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import Navbar from "./components/Navbar";
-
 
 export default function Home() {
   const [activeSkill, setActiveSkill] = useState(null);
@@ -226,7 +226,8 @@ export default function Home() {
 
       <main className="relative z-10 container mx-auto px-4 py-8 sm:px-6 lg:px-8">
         {/* Navigation */}
-      <Navbar/>
+        <Navbar/>
+        
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center text-center mb-24">
@@ -289,7 +290,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="flex gap-6 mb-20"
+              className="flex gap-6 mb-12"
             >
               {socialLinks.map((link, index) => (
                 <motion.a
@@ -307,6 +308,49 @@ export default function Home() {
                   </div>
                 </motion.a>
               ))}
+            </motion.div>
+
+            {/* Simple & Cute CV Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 0.5 }}
+              className="mb-20"
+            >
+              <motion.a
+                href="https://flowcv.com/resume/cis7t2joueri"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05, y: -3 }}
+                whileTap={{ scale: 0.98 }}
+                className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-cyan-400/30 hover:border-cyan-400/50 transition-all duration-300 shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/20"
+              >
+                {/* Subtle pulse effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-blue-500/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                
+                {/* File icon */}
+                <div className="relative z-10 text-cyan-400 group-hover:text-cyan-300 transition-colors">
+                  <FiFileText size={24} />
+                </div>
+                
+                {/* Text */}
+                <div className="relative z-10">
+                  <div className="text-white font-medium tracking-wide">
+                    View My CV
+                  </div>
+                  <div className="text-xs text-cyan-300/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Professional Resume
+                  </div>
+                </div>
+                
+                {/* Simple arrow */}
+                <div className="relative z-10 text-cyan-400 group-hover:text-cyan-300 group-hover:translate-x-1 transition-all duration-300">
+                  <FiChevronRight size={20} />
+                </div>
+                
+                {/* Simple hover effect */}
+                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </motion.a>
             </motion.div>
           </div>
 
