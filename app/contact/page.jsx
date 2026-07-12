@@ -351,7 +351,7 @@ export default function ContactPage() {
           <div className="flex justify-center gap-6">
             {[
               { icon: <FiGithub />, href: "https://github.com/Ammaralibrahim" },
-              { icon: <FiLinkedin />, href: "https://linkedin.com/in/ammaralibrahim" },
+              { icon: <FiLinkedin />, href: "https://www.linkedin.com/in/ammar-alibrahim-63790727a/" },
               { icon: <FiTwitter />, href: "https://twitter.com/ammaralibrahim" },
               { icon: <SiWhatsapp />, href: "https://wa.me/901234567890" },
               { icon: <SiTelegram />, href: "https://t.me/ammaralibrahim" },

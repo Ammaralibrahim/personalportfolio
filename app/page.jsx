@@ -53,8 +53,7 @@ const SocialLinks = () => (
   <div className="flex gap-4">
     {[
       { icon: <FiGithub />, href: "https://github.com/Ammaralibrahim" },
-      { icon: <FiLinkedin />, href: "https://linkedin.com/in/ammaralibrahim" },
-      { icon: <FiTwitter />, href: "https://twitter.com/ammaralibrahim" },
+      { icon: <FiLinkedin />, href: "https://www.linkedin.com/in/ammar-alibrahim-63790727a/" },
       { icon: <FiMail />, href: "mailto:ammaryasir8088@gmail.com" },
     ].map((link, i) => (
       <motion.a
